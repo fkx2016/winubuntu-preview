@@ -19,11 +19,18 @@
     .markdown-section table { display:block; overflow-x:auto; font-size: 15px; }
     .markdown-section pre, .markdown-section code { font-size: 14px; }
     .markdown-section pre { border-radius: 8px; }
-    /* Comfortable tap targets + pagination on mobile */
-    .sidebar-toggle { padding: 12px; }
+    /* Comfortable tap targets + pagination */
     .pagination-item-title { font-weight: 700; }
     .docsify-pagination-container { margin-top: 2rem; }
-    @media (max-width: 600px){ .markdown-section { padding: 14px 14px 80px; } }
+    /* Move the hamburger to the TOP-left on phones (Docsify's default parks it bottom-left) */
+    @media screen and (max-width: 768px){
+      .sidebar-toggle {
+        position: fixed; top: 0; bottom: auto; left: 0; width: auto;
+        padding: 14px 16px; background: rgba(255,255,255,0.92);
+        border-radius: 0 0 10px 0; z-index: 40;
+      }
+      .markdown-section { padding: 54px 14px 80px; }
+    }
   </style>
 </head>
 <body>
