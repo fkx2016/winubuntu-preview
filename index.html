@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>WinUbuntu — From Windows User to Confident AI Explorer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="A cinematic, fear-friendly guide to Ubuntu and AI, for Windows users who never planned to learn it.">
+  <meta name="theme-color" content="#6d5efc">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+  <style>
+    :root { --theme-color:#6d5efc; }
+    /* Mobile-first reading tuning (iPhone) */
+    html { -webkit-text-size-adjust:100%; }
+    .markdown-section { max-width: 44rem; padding: 18px 16px 72px; }
+    .markdown-section p, .markdown-section li { font-size: 17px; line-height: 1.75; }
+    .markdown-section h1 { font-size: 1.55rem; line-height: 1.2; margin-top: .4em; }
+    .markdown-section h2, .markdown-section h3 { line-height: 1.25; }
+    .markdown-section blockquote { border-left: 4px solid var(--theme-color); background:#f5f4ff; border-radius:8px; padding: 10px 14px; color:#333; }
+    .markdown-section table { display:block; overflow-x:auto; font-size: 15px; }
+    .markdown-section pre, .markdown-section code { font-size: 14px; }
+    .markdown-section pre { border-radius: 8px; }
+    /* Comfortable tap targets + pagination on mobile */
+    .sidebar-toggle { padding: 12px; }
+    .pagination-item-title { font-weight: 700; }
+    .docsify-pagination-container { margin-top: 2rem; }
+    @media (max-width: 600px){ .markdown-section { padding: 14px 14px 80px; } }
+  </style>
+</head>
+<body>
+  <div id="app">Loading the book…</div>
+  <script>
+    window.$docsify = {
+      name: '📖 WinUbuntu',
+      loadSidebar: true,
+      subMaxLevel: 0,
+      homepage: 'README.md',
+      auto2top: true,
+      themeColor: '#6d5efc',
+      pagination: { previousText: '‹ Back', nextText: 'Next ›', crossChapter: true, crossChapterText: true },
+      search: { placeholder: 'Search the book…', noData: 'Nothing found.', depth: 3 }
+    }
+  </script>
+  <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify@4/lib/plugins/search.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-bash.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-python.min.js"></script>
+</body>
+</html>
