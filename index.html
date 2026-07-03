@@ -37,7 +37,19 @@
       auto2top: true,
       themeColor: '#6d5efc',
       pagination: { previousText: '‹ Back', nextText: 'Next ›', crossChapter: true, crossChapterText: true },
-      search: { placeholder: 'Search the book…', noData: 'Nothing found.', depth: 3 }
+      search: { placeholder: 'Search the book…', noData: 'Nothing found.', depth: 3 },
+      plugins: [
+        function (hook) {
+          // Land at the TOP of every newly-opened page — covers Back/Next AND hamburger links.
+          hook.doneEach(function () {
+            window.scrollTo(0, 0);
+            document.documentElement.scrollTop = 0;
+            document.body.scrollTop = 0;
+            var c = document.querySelector('.content') || document.querySelector('section.content');
+            if (c) c.scrollTop = 0;
+          });
+        }
+      ]
     }
   </script>
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
