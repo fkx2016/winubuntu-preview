@@ -21,6 +21,8 @@ Our destination is not Ubuntu. **It's confidence.**
 
 ### [Begin the journey → Mission 0](mission-0.md)
 
+*This site now carries **two complete tellings** of the journey, written by different AI authors from the same source material — this original, and the [✨ Fable 5 Edition](fable5/README.md). Read either; compare both.*
+
 *Use the menu (☰ top-left on mobile) to jump anywhere, or **Back / Next** at the bottom of each page.*
 
 <sub>Preview edition · a work-in-progress draft. The full project lives in a private repo.</sub>
