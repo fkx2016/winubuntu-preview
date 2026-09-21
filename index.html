@@ -5,8 +5,12 @@
   <title>WinUbuntu — From Windows User to Confident AI Explorer</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <meta name="description" content="A cinematic, fear-friendly guide to Ubuntu and AI, for Windows users who never planned to learn it.">
+  <meta name="author" content="Frank Kurka, Kurka Labs">
+  <meta name="copyright" content="Copyright 2026 Frank Kurka. All rights reserved.">
   <meta name="theme-color" content="#6d5efc">
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+  <link rel="canonical" href="https://fkx2016.github.io/winubuntu-preview/">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify@4.13.1/lib/themes/vue.css" integrity="sha384-jCK82M2ExfkqAO/MYBKMjP1qC4AvZ4/Duf2gVWOy3RPn26uz+KW5I+9S39za1Fqv" crossorigin="anonymous">
   <style>
     :root { --theme-color:#6d5efc; }
     /* Mobile-first reading tuning (iPhone) */
@@ -19,6 +23,7 @@
     .markdown-section table { display:block; overflow-x:auto; font-size: 15px; }
     .markdown-section pre, .markdown-section code { font-size: 14px; }
     .markdown-section pre { border-radius: 8px; }
+    .site-footer { margin: 3rem 0 1rem; padding-top: 1rem; border-top: 1px solid #ddd; color: #666; font-size: 13px; line-height: 1.5; }
     /* Comfortable tap targets + pagination */
     .pagination-item-title { font-weight: 700; }
     .docsify-pagination-container { margin-top: 2rem; }
@@ -47,6 +52,9 @@
       search: { placeholder: 'Search the book…', noData: 'Nothing found.', depth: 3 },
       plugins: [
         function (hook) {
+          hook.afterEach(function (html) {
+            return html + '<footer class="site-footer">WinUbuntu is created by Frank Kurka and published by <a href="https://kurkalabs.dev">Kurka Labs</a>. Official domain: <strong>winubuntu.org</strong> (launching).<br> Copyright &copy; 2026 Frank Kurka. All rights reserved. <a href="#/NOTICE">Ownership and publication notice</a>.</footer>';
+          });
           // Land at the TOP of every newly-opened page — covers Back/Next AND hamburger links.
           hook.doneEach(function () {
             window.scrollTo(0, 0);
@@ -59,10 +67,10 @@
       ]
     }
   </script>
-  <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
-  <script src="//cdn.jsdelivr.net/npm/docsify@4/lib/plugins/search.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-bash.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-python.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify@4.13.1/lib/docsify.min.js" integrity="sha384-KaHhgnx/OTLoJ4J33SSJsF4x1pk4I7q3s5ZOfIDHJYl6IG7Oyn2vNDsHiWJe46fD" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify@4.13.1/lib/plugins/search.min.js" integrity="sha384-LthJPBJ4RGco78kBY+EmKz5rmISZ5vrtAu3+l2ALQ2mrZHOe6Wyf6knyKjeC4cL6" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify-pagination@2.10.1/dist/docsify-pagination.min.js" integrity="sha384-uFEp18/1vv2dYlO64J2lOcnbhirAQZPtruqAZZ7PZYoXenm5c+tIs3AqSMjVMRe8" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/components/prism-bash.min.js" integrity="sha384-9WmlN8ABpoFSSHvBGGjhvB3E/D8UkNB9HpLJjBQFC2VSQsM1odiQDv4NbEo+7l15" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/components/prism-python.min.js" integrity="sha384-WJdEkJKrbsqw0evQ4GB6mlsKe5cGTxBOw4KAEIa52ZLB7DDpliGkwdme/HMa5n1m" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -38,3 +38,5 @@
   - [C · Glossary](fable5/appendix-c.md)
 
 - [Back Cover (Fable 5)](fable5/back-cover.md)
+
+- [Ownership and publication notice](NOTICE.md)
