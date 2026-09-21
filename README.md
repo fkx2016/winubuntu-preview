@@ -26,3 +26,9 @@ Our destination is not Ubuntu. **It's confidence.**
 *Use the menu (☰ top-left on mobile) to jump anywhere, or **Back / Next** at the bottom of each page.*
 
 <sub>Preview edition · a work-in-progress draft. The full project lives in a private repo.</sub>
+
+---
+
+WinUbuntu is created by **Frank Kurka** and published by [Kurka Labs](https://kurkalabs.dev). The reserved canonical project domain is **winubuntu.org**; its public site is not yet launched.
+
+[Ownership and publication notice](NOTICE.md)
